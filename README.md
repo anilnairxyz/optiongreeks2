@@ -1,14 +1,25 @@
 # OPTION GREEKS
 Option Price and Greeks. PHP Webpage using Laravel.
 
-## Installation of Laravel and Composer
+## Initialization
+* Installation of Laravel and Composer
 ```
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 composer global require "laravel/installer"
 ```
-Add `export PATH=~/.composer/vendor/bin:$PATH` to .zshrc
-Start a new laravel app using `laravel new app`
+* Add `export PATH=~/.composer/vendor/bin:$PATH` to .zshrc
+* Start a new laravel app using `laravel new app`
+
+## Get the main grid css, the pages and layouts
+* Create Controller
+```
+php artisan make:controller PagesController
+```
+* Modify the routes and the controller pointing to the pages in views
+* Create layouts and includes
+* Include the plain css
+* Include the logo images
 
 ## Deployment using Lightsail
 * Create a Linux Instance with a LAMP (PHP 7) blueprint and the minimum configurations as described in the [**Lightsail**](https://lightsail.aws.amazon.com/ls/docs/en/articles/getting-started-with-amazon-lightsail) documentation.

@@ -53,6 +53,8 @@ return [
     */
 
     'url' => env('APP_URL', 'http://localhost'),
+	'footer_url' => env('FOOT_URL', 'http://localhost'),
+	'copyright_year' => env('FOOT_YEAR', '2019'),
 
     'asset_url' => env('ASSET_URL', null),
 
