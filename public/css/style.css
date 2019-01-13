@@ -1,13 +1,14 @@
 :root {
     --primary: white;
-    --secondary: HSL(225, 6%, 51%);
+    --secondary: black;
+    --contrast: rgba(219, 181, 57, 1);
     --base: #282F44;
     --base2: HSL(225, 6%, 21%);
     --text-color: HSL(225, 6%, 21%);
     --link-color: rgba(255, 255, 255, 0.7);
-    --header_base: black;
+    --header_base: var(--secondary);
     --header_opacity: 0.9;
-    --footer_base: black;
+    --footer_base: var(--secondary);
     --footer_opacity: 0.5;
 }
 

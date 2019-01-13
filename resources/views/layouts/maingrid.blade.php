@@ -31,15 +31,15 @@
     @include('includes.header')
 
     <div id="underlying">
-      Underlying
+      @yield('underlying')
     </div>
 
     <div id="trade_legs">
-      Trade Legs
+      @yield('trade_legs')
     </div>
 
     <div id="chart">
-      Chart Area
+      @yield('chart')
     </div>
 
     @include('includes.footer')

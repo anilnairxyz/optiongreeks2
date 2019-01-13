@@ -6,16 +6,16 @@
     <a href="#" class="logo"><img src="{{ asset('img/main_logo.svg') }}" alt="&pi;/4"></a>
     <ul class="main-nav" id="js-menu">
       <li>
-        <a href="#" class="nav-links">Option Price</a>
+        <a href="/" class="nav-links">Option Price</a>
       </li>
       <li>
-        <a href="#" class="nav-links">Implied Volatility</a>
+        <a href="/iv" class="nav-links">Implied Volatility</a>
       </li>
       <li>
-        <a href="#" class="nav-links">Payoff</a>
+        <a href="/payoff" class="nav-links">Payoff</a>
       </li>
       <li>
-        <a href="#" class="nav-links">Compare</a>
+        <a href="/compare" class="nav-links">Compare</a>
       </li>
     </ul>
   </nav>
