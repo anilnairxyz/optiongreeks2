@@ -1,7 +1,7 @@
 @extends('layouts.maingrid')
 
 @section('underlying')
-    <h1>Compare Underlying</h1>
+    @include('includes.underlying', ['title' => $title])
 @endsection
 
 @section('trade_legs')

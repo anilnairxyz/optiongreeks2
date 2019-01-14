@@ -53,8 +53,8 @@ return [
     */
 
     'url' => env('APP_URL', 'http://localhost'),
-	'footer_url' => env('FOOT_URL', 'http://localhost'),
-	'copyright_year' => env('FOOT_YEAR', '2019'),
+    'footer_url' => env('FOOT_URL', 'http://localhost'),
+    'copyright_year' => env('FOOT_YEAR', '2019'),
 
     'asset_url' => env('ASSET_URL', null),
 
@@ -163,6 +163,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -225,6 +226,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 

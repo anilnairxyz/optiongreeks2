@@ -54,7 +54,7 @@ body {
         "footer footer";
     height: 100vh;
     grid-template-columns: 1fr 710px;
-    grid-template-rows: auto 1fr 1fr 40px;
+    grid-template-rows: auto auto 1fr 40px;
     grid-gap: 10px;
 }
 
@@ -107,18 +107,6 @@ header {
 
 .show_navbar {
     display: block;
-}
-
-#chart {
-    background: #F2EAD3;
-}
-
-#chart, #underlying, #trade_legs {
-    text-transform: uppercase;
-    color: lightslategray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #underlying {
@@ -197,4 +185,37 @@ footer {
     .logo:hover, .nav-links:hover {
         color: rgba(255, 255, 255, 1);
     }
+}
+
+#chart {
+    background: #F2EAD3;
+}
+
+#chart, #underlying, #trade_legs {
+    text-transform: uppercase;
+    color: var(--text-color);;
+}
+
+#chart, #trade_legs {
+    display: flex;
+    align-items: center;
+	flex-direction: column;
+    justify-content: center;
+}
+
+.underlying-flex li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.underlying-flex li input[type=submit] {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
 }

@@ -15,3 +15,4 @@ Route::get('/', 'PagesController@index');
 Route::get('/iv', 'PagesController@iv');
 Route::get('/payoff', 'PagesController@payoff');
 Route::get('/compare', 'PagesController@compare');
+Route::post('/payoff', 'PostsController@render');
